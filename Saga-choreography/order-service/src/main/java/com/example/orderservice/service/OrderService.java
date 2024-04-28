@@ -5,10 +5,11 @@ import com.example.commondtos.event.OrderStatus;
 import com.example.orderservice.entity.PurchaseOrder;
 import com.example.orderservice.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+@Service
 public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
